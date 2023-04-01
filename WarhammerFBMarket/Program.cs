@@ -10,8 +10,8 @@ var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 	options.UseNpgsql(connection));
 
-builder.Services.AddScoped<IMiniatureRepository, MiniatureRepository>();
-builder.Services.AddScoped<IMiniatureBL, MiniatureBL>();
+builder.Services.AddScoped<MiniatureRepository, MiniatureRepository>();
+builder.Services.AddScoped<MiniatureBL, MiniatureBL>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
