@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WarhammerFBMarket.Domain.Models;
 
 namespace WarhammerFBMarket.DAL.Interfaces
 {
-	internal interface IBaseRepository<T>
+	public interface IBaseRepository<T>
 	{
-		public bool Create(T entity);
+		public Task<bool> Create(T entity);
 
-		public T Get(int id);
+		public Task<T> Get(int id);
 
-		IEnumerable<T> Select();
+		Task<List<T>> Select();
 
-		bool Delete(T entity);
+		Task<bool> Delete(T entity);
 	}
 }

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.ComponentModel.DataAnnotations;
 namespace WarhammerFBMarket.Domain.Enum
 {
-	public enum Fractions		
+	public enum Fraction		
 	{
 		[Display(Name = "Империя")]
 		Empire,

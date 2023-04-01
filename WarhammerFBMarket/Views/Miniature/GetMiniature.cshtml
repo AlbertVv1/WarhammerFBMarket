@@ -1,0 +1,17 @@
+﻿@model List<WarhammerFBMarket.Domain.Models.Miniature>
+
+@{
+	ViewBag.Title = "Title";
+	Layout = "_Layout";
+}
+
+@foreach(var miniature in Model)
+{
+	<div>
+	<p>@miniature.Name</p>
+	<p>@miniature.Description</p>
+	<p>@miniature.Fraction</p>
+	<p>@miniature.Price</p>
+	</div>
+	<br>
+}

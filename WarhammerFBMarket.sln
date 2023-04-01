@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarhammerFBMarket", "WarhammerFBMarket\WarhammerFBMarket.csproj", "{6436CE62-77C9-47C2-BB92-F804F2C23D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarhammerFBMarket", "WarhammerFBMarket\WarhammerFBMarket.csproj", "{6436CE62-77C9-47C2-BB92-F804F2C23D49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarhammerFBMarket.Domain", "WarhammerFBMarket.Domain\WarhammerFBMarket.Domain.csproj", "{8762A2F2-DFA1-4B1E-B4AE-64AAF71719C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarhammerFBMarket.Domain", "WarhammerFBMarket.Domain\WarhammerFBMarket.Domain.csproj", "{8762A2F2-DFA1-4B1E-B4AE-64AAF71719C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarhammerFBMarket.DAL", "WarhammerFBMarket.DAL\WarhammerFBMarket.DAL.csproj", "{22FFE4FD-C791-4774-8871-6D988E7B5F22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarhammerFBMarket.DAL", "WarhammerFBMarket.DAL\WarhammerFBMarket.DAL.csproj", "{22FFE4FD-C791-4774-8871-6D988E7B5F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarhammerFBMarket.BL", "WarhammerFBMarket.BL\WarhammerFBMarket.BL.csproj", "{055D72A3-CE75-47D8-BA2B-D04455F1BCA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{22FFE4FD-C791-4774-8871-6D988E7B5F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22FFE4FD-C791-4774-8871-6D988E7B5F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22FFE4FD-C791-4774-8871-6D988E7B5F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055D72A3-CE75-47D8-BA2B-D04455F1BCA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055D72A3-CE75-47D8-BA2B-D04455F1BCA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055D72A3-CE75-47D8-BA2B-D04455F1BCA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055D72A3-CE75-47D8-BA2B-D04455F1BCA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

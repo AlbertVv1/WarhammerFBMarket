@@ -18,24 +18,30 @@ namespace WarhammerFBMarket.DAL.Repositories
             _applicationDbContext = applicationDbContext;
         }
 
-        public bool Create(Miniature entity)
+        public async Task<bool> Create(Miniature entity)
 		{
-			throw new NotImplementedException();
+			await _applicationDbContext.AddAsync(entity);
+			await _applicationDbContext.SaveChangesAsync();
+
+			return true; 
 		}
 
-		public bool Delete(Miniature entity)
+		public async Task<bool> Delete(Miniature entity)
 		{
-			throw new NotImplementedException();
+			_applicationDbContext.Remove(entity);
+			await _applicationDbContext.SaveChangesAsync();
+
+			return true;
 		}
 
-		public Miniature Get(int id)
+		public async Task<Miniature> Get(int id)
 		{
-			throw new NotImplementedException();
+			return await _applicationDbContext.Miniature.FirstOrDefaultAsync(x => x.Id == id);
 		}
 
-		public Miniature GetByName(string name)
+		public async Task<Miniature> GetByName(string name)
 		{
-			throw new NotImplementedException();
+			return await _applicationDbContext.Miniature.FirstOrDefaultAsync(x => x.Name == name);
 		}
 
 		public Task<List<Miniature>> Select()
@@ -43,9 +49,5 @@ namespace WarhammerFBMarket.DAL.Repositories
 			return _applicationDbContext.Miniature.ToListAsync();
 		}
 
-		IEnumerable<Miniature> IBaseRepository<Miniature>.Select()
-		{
-			throw new NotImplementedException();
-		}
 	}
 }

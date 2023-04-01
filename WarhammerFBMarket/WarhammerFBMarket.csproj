@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WarhammerFBMarket.BL\WarhammerFBMarket.BL.csproj" />
     <ProjectReference Include="..\WarhammerFBMarket.DAL\WarhammerFBMarket.DAL.csproj" />
   </ItemGroup>
 

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WarhammerFBMarket.DAL.Repositories;
 using WarhammerFBMarket.Models;
 
 namespace WarhammerFBMarket.Controllers
@@ -8,16 +7,10 @@ namespace WarhammerFBMarket.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
-		private readonly MiniatureRepository _miniatureRepository;
 
-		//public HomeController(ILogger<HomeController> logger)
-		//{
-		//	_logger = logger;
-		//}
-
-		public HomeController(MiniatureRepository miniatureRepository)
+		public HomeController(ILogger<HomeController> logger)
 		{
-			_miniatureRepository = miniatureRepository;
+			_logger = logger;
 		}
 
 		public async Task<IActionResult> Index()
