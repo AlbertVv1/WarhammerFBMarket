@@ -11,13 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarhammerFBMarket.DAL", "Wa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarhammerFBMarket.BL", "WarhammerFBMarket.BL\WarhammerFBMarket.BL.csproj", "{055D72A3-CE75-47D8-BA2B-D04455F1BCA0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{773EB54A-DED3-4379-9DC0-8F3D922AEDFC}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\images\image.png = ..\..\..\Desktop\images\image.png
-		..\..\..\Desktop\images\image1.png = ..\..\..\Desktop\images\image1.png
-		..\..\..\Desktop\images\image2.png = ..\..\..\Desktop\images\image2.png
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
