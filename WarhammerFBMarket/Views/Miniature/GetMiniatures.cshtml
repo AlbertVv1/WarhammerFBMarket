@@ -5,13 +5,13 @@
 	Layout = "_Layout";
 }
 
-@foreach(var miniature in Model)
+@foreach (var miniature in Model)
 {
-	<div>
-	<p>@miniature.Name</p>
-	<p>@miniature.Description</p>
-	<p>@miniature.Fraction</p>
-	<p>@miniature.Price</p>
+	<div class="mid">
+		<div class="text-center">
+			<a class="nav-link text-black-50" href="/Miniature/GetMiniature/@miniature.Id"><p>@miniature.Name</p></a>
+			<p>@miniature.Description</p>
+		</div>
 	</div>
 	<br>
 }

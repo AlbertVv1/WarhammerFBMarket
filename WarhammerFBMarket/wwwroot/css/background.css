@@ -3,3 +3,8 @@
     background-size: cover;
     background-attachment: fixed;
 }
+.mid {
+    margin: 0 auto;
+    background: rgb(255, 255, 255, 0.5);
+
+}
