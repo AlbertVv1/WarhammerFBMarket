@@ -1,1 +1,4 @@
-# WarhammerFBMarket
+# WarhammerFBMarket - вымышленный сайт интернет - магазина настольных игр.
+![Главная страница](/images/image.png)
+![Страница со всеми товарами](/images/image1.png)
+![Страница товара, более полное описание](/images/image2.png)
